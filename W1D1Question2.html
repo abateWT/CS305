@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> W1D1 Q#1 Compute Sales Commission</title>
+</head>
+<script>
+    //Q# 1. Write a program to compute sales commission based on following rules:
+    var sales = prompt("Enter Your Sales!");
+           if(sales < 300)
+          console.log("No Commission!");
+       else if(sales >= 300 && sales <= 500)
+           console.log("The sales Commission is " + (0.01 * sales));
+       else if(sales > 400)
+           console.log("The sales Commission is: " + (0.02 * sales));
+       else if (0.02 * sales > 300 && 0.02*sales < 500)
+           console.log("It is not salaried");
+       else if(0.03 * sales > 500)
+           console.log("Not Salaried!");
+
+     //Q#2. Write a loop that continually prompts for age until you enter age older than 18
+     //Write both while and do while versions.
+     //let userNum = prompt("Please enter a number!");
+        //} while (userNum < 18);
+        //console.log(userNum);
+        console.log("==========================");
+        userInput = 1;
+        while (true) {
+            let userInput = prompt("Please enter a number!");
+            if (userInput > 18) {
+                userInput++;
+                console.log(userInput);
+                break;
+            } else
+                console.log(userInput);
+        }
+</script>
+<body>
+    <h2><strong> A program to compute sales commission</strong></h2>
+
+</body>
+</html>

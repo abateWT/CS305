@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> W1D1 Selection and Repetition in JS </title>
+</head>
+<script>
+//Lesson - Variables
+//Q#1.Giving the right name
+   let ourPlanet = "earth";
+   let currentVisitor = "Willams";
+//Q#2.Uppercase const
+    const BIRTHDAY = '18.04.1982'; // make uppercase?
+    //No problem in this case ,b/c the BD of everyone is the same.
+    //const AGE = someCode(BIRTHDAY); // make uppercase?
+    // Age of a person or something changes from year to year. Hence, it is good to use Lower case
+//Lesson - Basic operators, maths
+//Q#3. The postfix and prefix forms
+    let a = 1, b = 1;
+    let c = ++a; // ?a=a+1 2
+    let d = b++; // ?b=b+1 2
+    console.log(a);//2
+    console.log(b);//2
+    console.log(c);//2
+    console.log(d);//1
+    //alert(alert(1) || 2 || alert(3));
+    console.log("======================");
+    //Q#4. Assignment result
+    let h = 2;
+    let x = 1 + (h *= 2);
+    console.log(x);//a=a*2 => a=2*2=4 =>Ans 5.
+    //x= 1+(4) = 5
+    //Q#5. Type conversions
+    console.log("++++++++++++++++++");
+    console.log("" + 1 + 0);//10 concatination(+)
+    console.log("" - 1 + 0);//-1 (addition b/c of Minus sign)
+    console.log(true + false);//1+0=1
+    console.log(6 / "3");//2
+    console.log("2" * "3");//2*3 = 6
+    console.log(4 + 5 + "px");//9px (concatination(+))
+    console.log("$" + 4 + 5);//$45 (concatination(+))
+    console.log("4" - 2);//2
+    console.log("4px" - 2);//NaN
+    console.log(" -9 " + 5);//-9 5 (concatination(+))
+    console.log(" -9 " - 5);//-9-5=-14
+    console.log(null + 1);//1
+    console.log(undefined + 1);//NaN
+    console.log(" \t \n" - 2);//-2
+    console.log("++++++++++++++");
+     //Lesson => Comparsions
+     //Q#6. comparsions
+     console.log("==================================================");
+     console.log(5 > 4);//true
+     console.log("apple" > "pineapple");//false
+     console.log("2" > "12");//true (Dicionary comparsions)
+     console.log(undefined == null);//true
+     console.log(undefined === null);//false
+     console.log(null == "\n0\n");//false
+     console.log(null === +"\n0\n");//false
+     console.log("----------------------------")
+//Lesson = Logical operators
+////Q#7.Logical operators Questions
+ //alert(null || 2 || undefined);//2
+//alert(alert(1) || 2 || alert(3));//1 or 2
+   // alert(1 && 16 && 2);//2 All are true take the last One
+   //OR left to Right, take the 1st True value otherwise return Last Value
+   //AND left to Right, take the 1st value False othwise return Last Value
+   //alert(1 && null && 2);//null
+   //alert(alert(1) && alert(2));//1 and undefined
+  // alert(null || 2 && 3 || 4);//Hence, null = 0 then 0 || 2 => 2 && 3 || 4 => 3
+
+</script>
+<body>
+    <h2><strong> CS305 OOP in JavaScript</strong></h2>
+
+</body>
+</html>

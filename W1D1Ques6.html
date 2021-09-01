@@ -2,30 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> addNumbersExe </title>
+    <title> W1D2DistanceFormula</title>
 </head>
 <script>
-    //Q#6. Write a JavaScript program to prompt for an integer and compute the sum of all the digits.
-    let userInput = prompt("Enter any integer!");
-        let sum = 0;
-    for(let i = 0; i<= userInput.length; i++){
-          sum = sum + i%10;
-    }
-    console.log(sum)
-    console.log("============================");
-    // //Q#6. Write a JavaScript program to prompt for an integer and compute the sum of all the digits.
-    let num = prompt("Enter a number");
-    let addNumbers = function(){
-            let sum2 = 0;
-            while (num != 0) {
-                sum2 = sum2 + num % 10;
-                num = Math.floor(num / 10);
-            }
-            console.log(sum2);
-        }
-        addNumbers();
+//6. Write a function that takes x and y co-ordinates of two points as inputs and returns the distance between these two points based on the formula, d = √(x 2 − x 1 ) 2 + (y 2 − y 1 ) 2
+     function calcDistance(x1,y1,x2,y2){
+       let distance = Math.sqrt((x2-x1)**2 + (y2 - y1)**2);
+       return distance;
+     }
+    console.log("expect 5 : ",calcDistance(0,0,5,5));
+    console.log("expect 5 : ",calcDistance(1,2,0,5));
+    console.log("expect 5 : ",calcDistance(2,3,5,4));
+
 </script>
 <body>
-<h2><strong>Compute the sum of all the digits</strong></h2>
+<h2><strong>Distance Formula </strong></h2>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+//Q#4. Write functions sumDigits and multDigits that take an integer parameter and return the sum orproduct of the digits in the number.Use the / and % operators to find the digits.
+  function sumDigits(num1){
+    let sum = 0;
+    for(let i=0; i<= num1.length; i++){
+    sum = sum + i%10;
+    return sum;
+    }
+  }
+  console.log(sumDigits(123));//1+2+3=6
+  console.log(sumDigits(12));//1+2=3
+  console.log(sumDigits(23));//2+3=5
+  function multDigits(num2){
+     let product = 1;
+     for(let k=0; k<= num2.length; k++){
+         product = product * k/10;
+         return product;
+     }
+  }
+ console.log(multDigits(123));//1*2*3=6
+ console.log(multDigits(45));//4*5=20
+ console.log(multDigits(492));//4*9*2=72
+
+</script>
+<body>
+<h2><strong></strong></h2>
+</body>
+</html>

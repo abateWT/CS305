@@ -20,21 +20,12 @@
            console.log("Not Salaried!");
 
      //Q#2. Write a loop that continually prompts for age until you enter age older than 18
-     //Write both while and do while versions.
-     //let userNum = prompt("Please enter a number!");
-        //} while (userNum < 18);
-        //console.log(userNum);
-        console.log("==========================");
-        userInput = 1;
-        while (true) {
-            let userInput = prompt("Please enter a number!");
-            if (userInput > 18) {
-                userInput++;
-                console.log(userInput);
-                break;
-            } else
-                console.log(userInput);
-        }
+      userInput = 0;
+    while (userInput < 18) {
+        let userInput = prompt("Please enter a number!");
+           console.log(userInput);
+            break;
+    }
 </script>
 <body>
     <h2><strong> A program to compute sales commission</strong></h2>

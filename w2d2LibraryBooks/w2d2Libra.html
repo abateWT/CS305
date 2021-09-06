@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script>
+function myfunction1(){
+var bookTitle = document.getElementById("BT").value;
+var author = document.getElementById("AU").value;
+var libraryId = document.getElementById("LD").value;
+let message1 = "Your Library Book is as shown below per on order:- "
+document.getElementById("answer1").innerHTML = message1;
 
+}
+function myfunction2() {
+var bookTitle = document.getElementById("BT").value;
+var author = document.getElementById("AU").value;
+var libraryId = document.getElementById("LD").value;
+let message2 = bookTitle;
+document.getElementById("answer2").innerHTML = message2;
+
+}
+function myfunction3() {
+var bookTitle = document.getElementById("BT").value;
+var author = document.getElementById("AU").value;
+var libraryId = document.getElementById("LD").value;
+let message3 = author;
+document.getElementById("answer3").innerHTML = message3;
+
+}
+function myfunction4() {
+var bookTitle = document.getElementById("BT").value;
+var author = document.getElementById("AU").value;
+var libraryId = document.getElementById("LD").value;
+let message4 = libraryId;
+document.getElementById("answer4").innerHTML = message4;
+
+}
+</script>
+<body>
+<h2><strong> Library of Books</strong> </strong></h2>
+Book Type <input type="text" id="BT" placeholder="Your Book Name "><br>
+Author <input type="text" id="AU" placeholder="Book Author"><br>
+Library Id <input type="text" id="LD" placeholder="Like #..."><br>
+<button type="button" onclick="myfunction1()" >Add to Book Library </button>
+<button type="button" onclick="myfunction2()"> Show Titles </button>
+<button type="button" onclick="myfunction3()"> Show Authors </button>
+<button type="button" onclick="myfunction4()"> Show ID's </button>
+<div id="answer1"></div>
+<div id="answer2"></div>
+<div id="answer3"></div>
+<div id="answer4"></div>
+</body>
+</html>

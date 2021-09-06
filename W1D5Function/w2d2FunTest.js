@@ -1,4 +1,14 @@
 "use strict";
+/* You need the module.exports when testing in node.  Comment it out when you send your file to the browser
+*/
+module.exports = {double,times100,myMap}; //add all of your function names here that you need for the node mocha tests
+
+/**
+ *
+ * @param {array} double the element
+ * @param {array} double the element
+ * @param {array} double the element
+  */
 
 /* You need the assert and function name declarations to test in node.
 Comment these out when you send it to the browser with the index.html mocha setup page.
@@ -64,5 +74,4 @@ describe("times100", function () {
             assert.deepStrictEqual(myMap(arr,myMap), [-30.0,30,60]);
         });
     });
-
 

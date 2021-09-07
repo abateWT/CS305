@@ -24,7 +24,7 @@ const myMap = imports.myMap;
 /* global assert double times100 myMap  */
 
 
-/* 1. Write a function, double, that takes a number and returns 2 times the number..  */
+/* 1. Write a function, double, that takes a number and returns 2 times the number.*/
 describe("double", function () {
     it("tests double 6", function () {
         assert.strictEqual(double(6),12);
@@ -52,26 +52,23 @@ describe("times100", function () {
 });
 
  /* 3. Write a function, myMap, that takes an array and a function and returns a new array that has the function applied to each element of the input array. */
-    describe("myMap", function () {
-        const arr = [-10,0,10,20];
-        it("tests myMap on double", function () {
-            assert.deepStrictEqual(myMap(arr, double), [-20,0,0,40]);
-        });
-        it("tests myMap on times100", function () {
-            assert.deepStrictEqual(myMap(arr, times100), [-1000,0,1000,2000]);
-        });
+describe("myMap", function () {
+    const arr = [-10,0,10,20];
+    it("tests myMap on double", function () {
+    assert.deepStrictEqual(myMap(arr, double), [-20,0,20,40]);
     });
-
-    /* 4. Demonstrate your myMap function with an anonymous function that triples the input value.  Write this as an anonymous function expression.
-    Then write it using an arrow expression. */
-
-    describe("myMap", function () {
-        const arr = [-10,0,10,20];
-        it("tests myMap on triples anonymous function", function () {
-            assert.deepStrictEqual(myMap(arr,myMap), [-30,0,30,60]);
-        });
-        it("tests myMap on triples arrow function", function () {
-            assert.deepStrictEqual(myMap(arr,myMap), [-30.0,30,60]);
-        });
+    it("tests myMap on times100", function () {
+    assert.deepStrictEqual(myMap(arr, times100), [-1000,0,1000,2000]);
     });
+});
 
+/* 4. Demonstrate your myMap function with an anonymous function that triples the input value.  Write this as an anonymous function expression.Then write it using an arrow expression.*/
+
+describe("myMap", function () {
+    it("tests myMap on triples anonymous function", function () {
+    assert.deepStrictEqual(myMap(arr,myMap), [-30,0,30,60]);
+    });
+    it("tests myMap on triples arrow function", function () {
+    assert.deepStrictEqual(myMap(arr,myMap), [-30.0,30,60]);
+    });
+});
